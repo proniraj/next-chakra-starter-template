@@ -2,6 +2,7 @@
   "name": "admin",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +13,17 @@
     "postinstall": "npm run gen:theme-typings",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "git-format-staged": "git-format-staged",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:ci": "vitest --ci",
+    "test:debug": "vitest --debug",
+    "test:inspect": "vitest --inspect",
+    "test:inspect-brk": "vitest --inspect-brk",
+    "test:inspect-brk:ci": "vitest --inspect-brk --ci",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0",
@@ -26,15 +37,25 @@
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.4.1",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.1",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/ui": "^1.5.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "git-format-staged": "^3.1.1",
     "husky": "^9.0.11",
+    "jsdom": "^24.0.0",
+    "lint-staged": "^15.2.2",
     "prettier": "3.2.5",
-    "typescript": "^5.4.0"
+    "typescript": "^5.4.0",
+    "vitest": "^1.5.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

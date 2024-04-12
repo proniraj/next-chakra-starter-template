@@ -1,5 +1,2 @@
-# Format the code
-npm run format
-
-# Run the tests
-npm run test
+# this will run the linter on all staged files before commiting
+npx lint-staged
