@@ -1,17 +1,18 @@
 "use client";
-import React, { FC } from "react";
+
+import { CacheProvider } from "@chakra-ui/next-js";
 import {
   ChakraProvider as Chakra,
   cookieStorageManager,
 } from "@chakra-ui/react";
-import { CacheProvider } from "@chakra-ui/next-js";
-import customTheme from "@/theme";
 import dynamic from "next/dynamic";
+import React, { FC } from "react";
+import customTheme from "@/theme";
 
 // Lazy load the ColorModeStrictWrapper - this is a workaround for a bug in Chakra
 const ColorModeStrictWrapper = dynamic(
   () => import("@/context/ColorModeStrictWrapper"),
-  { ssr: false }
+  { ssr: false },
 );
 
 type Props = {
