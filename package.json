@@ -16,6 +16,7 @@
     "prepare": "husky",
     "git-format-staged": "git-format-staged",
     "test": "vitest",
+    "test:run": "vitest run",
     "test:watch": "vitest --watch",
     "test:coverage": "vitest --coverage",
     "test:ci": "vitest --ci",
@@ -43,10 +44,13 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/ui": "^1.5.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
+    "eslint-config-prettier": "^9.1.0",
     "git-format-staged": "^3.1.1",
     "husky": "^9.0.11",
     "jsdom": "^24.0.0",
@@ -56,6 +60,8 @@
     "vitest": "^1.5.0"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": [
+      "prettier --write --check"
+    ]
   }
 }
