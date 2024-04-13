@@ -1,6 +1,7 @@
 import { ColorModeScript } from "@chakra-ui/react";
 import { Inter } from "next/font/google";
 import { cookies } from "next/headers";
+import React from "react";
 import type { Metadata } from "next";
 import ChakraProvider from "@/context/ChakraProvider";
 import customTheme from "@/theme";
