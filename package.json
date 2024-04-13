@@ -24,20 +24,26 @@
     "test:inspect": "vitest --inspect",
     "test:inspect-brk": "vitest --inspect-brk",
     "test:inspect-brk:ci": "vitest --inspect-brk --ci",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "commit": "npx commit"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0",
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-    "framer-motion": "^11.0.28",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.4.1",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@commitlint/cz-commitlint": "^19.2.0",
+    "@commitlint/format": "^19.0.3",
+    "@commitlint/prompt-cli": "^19.2.0",
+    "@commitlint/types": "^19.0.3",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^15.0.1",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
@@ -58,10 +64,5 @@
     "prettier": "3.2.5",
     "typescript": "^5.4.0",
     "vitest": "^1.5.0"
-  },
-  "lint-staged": {
-    "**/*": [
-      "prettier --write --check"
-    ]
   }
 }
