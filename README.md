@@ -118,5 +118,5 @@ bun test
 ## Follow
 
 - [GitHub](https://github.com/niraj_)
-- [LinkedIn](https://www.linkedin.com/in/ntnirajthakur)
+- [LinkedIn](https://www.linkedin.com/in/developerniraj)
 - [Facebook](https://www.facebook.com/developer.niraj)
