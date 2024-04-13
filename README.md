@@ -1,9 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) and [Chakra UI](https://chakra-ui.com/)
+starter template. This repository contains a Next.js project with Chakra UI and
+TypeScript.
+
+## Features
+
+- Next.js
+- Chakra UI
+- TypeScript
+- ESLint
+- Prettier
+- Husky
+- Lint-staged
+- Commitlint
+- Commitizen
+- Conventional Commits
+- Jest
+- Testing Library
+- React Query
+- Axios
+- React Hook Form
+- React Query Devtools
 
 ## Getting Started
 
-First, run the development server:
+First clone the repository:
+
+```bash
+git clone https://ntnirajthakur21/next-chakra-starter.git
+```
+
+Then install the dependencies:
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+# or
+bun install
+```
+
+Now you can run the development server:
 
 ```bash
 npm run dev
@@ -21,28 +59,64 @@ result.
 You can start editing the page by modifying `app/page.tsx`. The page
 auto-updates as you edit the file.
 
-This project uses
-[`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to
-automatically optimize and load Inter, a custom Google Font.
+This project uses [ESLint](https://eslint.org/) and
+[Prettier](https://prettier.io/) for code formatting and linting. You can run
+the following commands to lint and format your code:
 
-## Learn More
+```bash
+npm run lint
+# or
+yarn lint
+# or
+pnpm lint
+# or
+bun lint
+```
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run format
+# or
+yarn format
+# or
+pnpm format
+# or
+bun format
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project uses [Husky](https://typicode.github.io/husky) and
+[Lint-staged](https://www.npmjs.com/package/lint-staged) to run ESLint and
+Prettier on staged files before committing. This project also uses
+[Commitlint](https://commitlint.js.org) and
+[Commitizen](https://commitizen-tools.github.io/commitizen) to enforce
+conventional commit messages. You can run the following command to commit your
+changes:
 
-You can check out
-[the Next.js GitHub repository](https://github.com/vercel/next.js/) - your
-feedback and contributions are welcome!
+```bash
+npm run commit
+# or
+yarn commit
+# or
+pnpm commit
+# or
+bun commit
+```
 
-## Deploy on Vercel
+This project uses [Jest](https://jestjs.io) and
+[Testing Library](https://testing-library.com) for testing. You can run the
+following command to run the tests:
 
-The easiest way to deploy your Next.js app is to use the
-[Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
+```bash
+npm run test
+# or
+yarn test
+# or
+pnpm test
+# or
+bun test
+```
 
-Check out our
-[Next.js deployment documentation](https://nextjs.org/docs/deployment) for more
-details.
+## Follow
+
+- [GitHub](https://github.com/niraj_)
+- [LinkedIn](https://www.linkedin.com/in/ntnirajthakur)
+- [Facebook](https://www.facebook.com/developer.niraj)
