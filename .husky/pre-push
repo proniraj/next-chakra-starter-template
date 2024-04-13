@@ -1,4 +1,4 @@
-npx format:check
+npx prettier --check .
 
 npx next lint
 
