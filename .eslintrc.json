@@ -1,7 +1,31 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "next",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "root": true,
   "rules": {
     "no-unused-vars": "warn",
-    "no-console": "warn"
+    "no-console": "warn",
+    "no-unreachable": "error",
+    "no-undef": "error",
+    "no-const-assign": "error",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-empty": "error",
+    "no-extra-boolean-cast": "error",
+    "no-extra-semi": "error",
+    "no-func-assign": "error",
+    "no-invalid-regexp": "error",
+    "no-irregular-whitespace": "error",
+    "no-obj-calls": "error",
+    "no-sparse-arrays": "error",
+    "no-unexpected-multiline": "error"
   }
 }
